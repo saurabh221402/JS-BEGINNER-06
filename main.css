@@ -1,0 +1,48 @@
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+.screen
+{
+    width: 100%;
+    height: 100vh;
+    background-color: bisque;
+    position: relative;
+    overflow: hidden;
+}
+#but
+{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    border-style: none;
+
+    transform: translate(-50%,-50%); 
+}
+.page
+{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 100%;
+    height: 30vh;
+    padding: 20px 30px;
+    overflow: scroll;
+    max-width: 1000px; 
+    background-color: white;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    transform: translate(-50%,-10%);
+}
+.page::-webkit-scrollbar {
+    display: none;
+}
+.drag
+{
+    width: 200px; 
+    border: 4px solid gray;
+    margin: 0 auto;
+    
+}
