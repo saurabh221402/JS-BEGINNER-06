@@ -2,7 +2,8 @@
 function showPage()
 {
     let page=document.querySelector(".page");
-    page.style.top='80%';
+    
+    page.style.top='80%'; 
 
 }
 
@@ -18,6 +19,7 @@ document.addEventListener("dragstart", function(event) {
   document.addEventListener("drag", function(event) {
     let x=event.clientY;
     let page=document.querySelector(".page");
+    if(page.style.height<60+"vh")
     page.style.top=x+"px";
     page.style.height=height-x+10+"px";
   });
