@@ -19,7 +19,7 @@ document.addEventListener("dragstart", function(event) {
   document.addEventListener("drag", function(event) {
     let x=event.clientY;
     let page=document.querySelector(".page");
-    if(page.style.height<60+"vh")
+    if(page.style.height<65+"vh")
     page.style.top=x+"px";
     page.style.height=height-x+10+"px";
   });
