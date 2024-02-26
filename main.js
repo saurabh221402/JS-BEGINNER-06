@@ -6,7 +6,6 @@ function showPage()
     page.style.top='80%'; 
 
 }
-
 let height= innerHeight;
 document.addEventListener("dragstart", function(event) {
     // The dataTransfer.setData() method sets the data type and the value of the dragged data
