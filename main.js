@@ -19,14 +19,16 @@ document.addEventListener("dragstart", function(event) {
     let x=event.clientY;
     let page=document.querySelector(".page");
     event.target.style.opacity = ".4";
+    page.style.opacity=".7";
     if(x>100)
     page.style.top=x+"px";
     page.style.height=height-x+10+"px";
   });
 
   document.addEventListener("dragend", function(event) { 
-   // let page=document.querySelector(".page"); 
+   let page=document.querySelector(".page"); 
    // page.style.top=100+"px";  
+   page.style.opacity="1";
    event.target.style.opacity = "1";
   });
 //   document.addEventListener("dragend", function(event) {
