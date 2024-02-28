@@ -19,7 +19,7 @@ document.addEventListener("dragstart", function(event) {
     let x=event.clientY;
     let page=document.querySelector(".page");
     event.target.style.opacity = ".4";
-    page.style.opacity=".7";
+    page.style.opacity=".5";
     if(x>100)
     page.style.top=x+"px";
     page.style.height=height-x+10+"px";
